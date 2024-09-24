@@ -1,0 +1,87 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.summary-list-container {
+  position: relative;
+  width: 300px; 
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  background-color: whitesmoke;
+  margin-top: 5px;
+  border: 2px solid black;
+}
+
+.btn-custom {
+  background-color: #007bff;
+  border-color: 1px solid black;
+  width: 100px;
+  margin-left: 45%;
+  padding: 3px;
+}
+
+/* Add this to App.css */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: lightblue;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.summary-item {
+  margin-bottom: 10px;
+}
+
+.value-box {
+  background-color: white;
+  color: black;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+hr {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.total-amount {
+  font-weight: bold;
+}

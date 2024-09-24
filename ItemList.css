@@ -1,0 +1,167 @@
+.item-list-container {
+    margin: 20px;
+    margin-top: 38px;
+    transition: all 0.2s ease-in-out;
+}
+
+.table-container {
+    display: flex;     
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    margin-left: 19%;
+    border: 1px solid black;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, 
+.table-container td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.table-container th {
+    background-color: #f4f4f4;
+}
+
+.table-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-button {
+    margin-top: 10px;
+    padding: 0px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 48%;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.summary {
+    margin-top: 20px;
+}
+
+.summary div {
+    margin-bottom: 10px;
+}
+
+.summary label {
+    margin-right: 10px;
+}
+
+.discount-box {
+    display: flex;
+    align-items: center;
+}
+
+.discount-box input {
+    margin-right: 5px;
+    width: 80px; /* Adjust width as needed */
+}
+
+.discount-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.discount-button:hover {
+    background-color: #e0e0e0;
+}
+.discount-box {
+    position: relative;
+    width: 100%;
+}
+
+.discount-box input {
+    width: 100%;
+    padding-left:40px; /* Leave space for "Rs." text */
+    padding-right: 10px;
+}
+
+.discount-box::before {
+    content: '$:';
+    position: absolute;
+    left: 10px;  /* Position the Rs. to the left inside the input */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    color: black;
+}
+
+.discount-button {
+    display: none; /* Remove button completely */
+}
+
+
+/* .summary {
+    background-color: black; 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-family: Arial, sans-serif; 
+    margin-top: 10px; 
+    width: 20%;
+    margin-left: 82%;
+} */
+/* 
+/* .summary div {
+    margin-bottom: 10px; Space between each line
+    display: flex; 
+    justify-content: space-between; /* Space out the label and value */
+/* } */
+
+/* .summary .label {
+    flex: 1; 
+} */
+
+/* .summary .value {
+    background-color: blue; 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 3px; 
+    font-weight: bold; 
+    text-align: right; 
+} */ */ */
+
+
+.discount-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.discount-box input {
+    width: calc(100% - 50px); /* Adjust width to fit the button */
+    margin-right: 5px;
+    
+}
+
+.toggle-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px 8px;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+}
+
+.toggle-button:hover {
+    background-color: #e0e0e0;
+}

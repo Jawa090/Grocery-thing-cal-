@@ -1,0 +1,48 @@
+.popup {
+    position: fixed;
+    top: 70px; /* Align to top of the page */
+    left: 20%; /* Align to left of the page */
+    width: 85vw; /* Full viewport width */
+    height: 85vh; /* Full viewport height */
+    padding: 0; /* Remove padding */
+    z-index: 1000;
+    text-align: center;
+    opacity: 1;
+    border-radius: 0; /* Remove rounded corners for full page effect */
+    animation: fadeIn 0.5s ease-in-out, fadeOut 4s 4.5s forwards; 
+    font-style: italic;
+}
+
+.popup-content {
+    border-radius: 0; /* No rounded corners */
+    padding: 50px; /* Add a bit of padding for content inside */
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    box-sizing: border-box; /* Ensure padding does not affect overall width/height */
+}
+
+.popup-content h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ff6347;
+    font-family: 'Georgia', serif;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.popup-content:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}

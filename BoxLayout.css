@@ -1,0 +1,32 @@
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+  width: 60%;
+ margin-left: 290px;
+ margin-top: 6%;
+}
+
+.box {
+  flex: 1; /* Ensures both boxes have the same width */
+  min-width: 200px; 
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  
+}
+
+.box input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
